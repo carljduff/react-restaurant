@@ -14,10 +14,10 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} >
+      <Route path="/" element={<App />} />
         <Route path="appitizers" element={<Appitizers />} />
         <Route path="pasta" element={<Pasta />} />
-      </Route>
+    
     </Routes>
     </BrowserRouter>
   </React.StrictMode>,

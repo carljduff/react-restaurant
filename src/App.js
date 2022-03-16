@@ -15,7 +15,6 @@ export default function App() {
         <Link to="/appitizers" className="p-3">Appitizers</Link> {" "}
         <Link to="/pasta" className='p-3'>Pasta</Link> {" "}
       </nav>
-      <Outlet />
     </div>
 
 
