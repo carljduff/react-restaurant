@@ -1,6 +1,7 @@
-import axios from "axios";
+// import axios from "axios";
 
-export async function getData() {
-  let response = await axios.get(`https://sheltered-refuge-85246.herokuapp.com/api/json`);
-  return response.data;
-}
+// export async function getData(ENDPOINT) {
+//   let response = await axios.get(`${ENDPOINT}`);
+//   let data = response.data
+//   return data;
+// }

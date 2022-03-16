@@ -1,30 +1,36 @@
-import React, { useEffect, useState} from 'react';
-import { getData } from '../utilities/data';
+import React, { useEffect, useState } from 'react';
+// import { getData } from '../utilities/data';
+import Axios from 'axios'
 
 export default function Appitizers() {
-    const [apps, setApps] = useState([]);
+    const [apps, setApps] = useState('');
 
     useEffect(() => {
-        getData()
-        .then((data)=> {
-            setApps(data);
+       Axios.get('https://sheltered-refuge-85246.herokuapp.com/api/json')
+       .then(res => {
+        console.log("Getting from....", res.data)
+        setApps(res.data)
+       })
+    }, [])
+
+        const menu = apps.map((apps) => {
+            return (
+                <h1> {apps.title} </h1>
+            )
         })
-    }, []);
-
-
     return (
-        <main style={{ padding: '1rem 0'}}>
-            HELLO   
-        </main>
+        <div>
+         {menu}
+        </div>
     );
 
+}
     const Appitizer = ({app}) => {
         return (
             <div>
-            <h1>{menu_items.title}</h1>
+            <h1>{app.title}</h1>
             <h1></h1> 
             <h1></h1> 
             </div>
         )
-    }
-}
+    } 
