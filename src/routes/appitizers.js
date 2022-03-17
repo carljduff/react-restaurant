@@ -21,7 +21,6 @@ export default function Appetizers() {
         // console.log(apps)
        })
     }, [])
-
         
     return (
         <div>
