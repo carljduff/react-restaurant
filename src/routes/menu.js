@@ -14,7 +14,7 @@ export default function Menu() {
     <div className='nav'>
       
             <Link to="/" className="menu-link">Home</Link> {" "}
-            <Link to="/appitizers" className="menu-link">Appitizers</Link> {" "}
+            <Link to="/appetizers" className="menu-link">Appetizers</Link> {" "}
             <Link to="/pasta" className='menu-link'>Pasta</Link> {" "}
           <Outlet />
       </div>

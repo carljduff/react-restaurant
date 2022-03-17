@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-// import { getData } from '../utilities/data';
+import { getData } from '../util/data';
 import Axios from 'axios'
+import Card from 'react-bootstrap/Card'
 
 export default function Appetizers() {
     //Declaring a state variable called apps and set it to an empty array 
@@ -12,17 +13,15 @@ export default function Appetizers() {
     // {apps.filter(app => app.category.title === 'Appetizer')}
 
     useEffect(() => {
-         Axios.get('https://sheltered-refuge-85246.herokuapp.com/api/json')
-        .then(res => {
-            // console.log("Getting from....", res.data)
-            let data = res.data;
-        setApps(data)
-        console.log(data)
-        // console.log(apps)
-       })
-    }, [])
+        getData()
+        .then((data) => {
+            setApps(data)
+        })
+    },[]);
         
     return (
+
+
         <div>
         {
         apps
@@ -34,10 +33,15 @@ export default function Appetizers() {
 }
     const Appetizer = ({app}) => {
         return (
-            <div>
-            <h1>{app.title}</h1>
-            <h1>{app.description}</h1> 
-            <h1></h1> 
-            </div>
+            <Card className='cards justify-content-center' style={{ width: '18rem' }}>
+  <Card.Img variant="top" />
+  <Card.Body>
+    <Card.Title>{app.title}</Card.Title>
+    <Card.Text>
+      {app.description}
+    </Card.Text>
+  </Card.Body>
+</Card>
+        
         )
     } 
