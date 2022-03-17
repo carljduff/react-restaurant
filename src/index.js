@@ -8,7 +8,7 @@ import {
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Menu from './routes/menu'
-import Appitizers from './routes/appitizers';
+import Appetizers from './routes/appetizers';
 import Pasta from './routes/pasta'
 
 
@@ -18,7 +18,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<App />} />
         <Route path="menu" element={<Menu />} />
-        <Route path="appitizers" element={<Appitizers />} />
+        <Route path="appetizers" element={<Appetizers />} />
         <Route path="pasta" element={<Pasta />} />
          
     

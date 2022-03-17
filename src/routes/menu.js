@@ -10,12 +10,12 @@ export default function Menu() {
         <main style={{ padding: '1rem 0'}}>
         
         <Container className="p-5 mb-4 rounded-3 cc">
-    <h1 className="header">Restaurant Name</h1>
+    
     <div className='nav'>
       
-            <Link to="/" className="menu-link">Home</Link> {" "}
-            <Link to="/appitizers" className="menu-link">Appitizers</Link> {" "}
-            <Link to="/pasta" className='menu-link'>Pasta</Link> {" "}
+            <Link to="/" style={{ textDecoration: 'none' }} className="menu-link">Home</Link> {" "}
+            <Link to="/appetizers" style={{ textDecoration: 'none' }} className="menu-link">Appetizers</Link> {" "}
+            <Link to="/pasta" style={{ textDecoration: 'none' }} className='menu-link'>Pasta</Link> {" "}
           <Outlet />
       </div>
   </Container>
