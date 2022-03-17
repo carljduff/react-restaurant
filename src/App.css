@@ -1,12 +1,27 @@
-/* .bg {
-  background-color: #B1C1DE;
+.bg {
+background-color: #F5DFCC;
+
 }
-*/
+
+
 
 .header {
   text-align: center;
 } 
 
-/* .cc {
-  background-color:#BBBEC4 !important;
-} */
+.cc {
+  background-color:#DEBDAD !important;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+}
+
+.menu-link {
+  text-align: center;
+  color: #998888;
+  font-size: 3rem;
+}

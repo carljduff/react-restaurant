@@ -13,14 +13,10 @@ export default function Appitizers() {
        })
     }, [])
 
-        const menu = apps.map((apps) => {
-            return (
-                <h1> {apps.title} </h1>
-            )
-        })
+        
     return (
         <div>
-         {menu}
+         APPS
         </div>
     );
 
