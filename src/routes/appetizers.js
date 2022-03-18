@@ -42,20 +42,30 @@ export default function Appetizers() {
 }
     const Appetizer = ({app}) => {
         return (
-          
          
+            <div className='card'>
+            <div className='card-top'>
+            <h1>{app.title}</h1>
+            </div>
+            <div className='card-price'>
+           {app.price}
+            </div>
+            <div> 
+            <p className='card-body'> {app.description}</p>
+            </div>
+            </div> 
             
-            <div className='small'>
-                <div className='menu-container'>
-                    <div className="row">
-                <h3 className='title'>{app.title}</h3>
-                <h6 className='price'>{app.price}</h6> 
-                <div className='p-container des'>
-                <p className='description p-container'> {app.description}</p>
-                    </div>
-                    </div>
-                </div>
-                </div>
+            // <div className='small'>
+            //     <div className='menu-container'>
+            //         <div className="row">
+            //     <h3 className='title'>{app.title}</h3>
+            //     <h6 className='price'>{app.price}</h6> 
+            //     <div className='p-container des'>
+            //     <p className='description p-container'> {app.description}</p>
+            //         </div>
+            //         </div>
+            //     </div>
+            //     </div>
              
                
             

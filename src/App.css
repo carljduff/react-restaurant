@@ -80,5 +80,32 @@ background-color: #FFFCF9;
   justify-content: space-evenly;
 }
 
+.card-top {
+  font-family: 'Cookie', cursive;
+  font-size: 5rem;
+  color: #998888;
+  font-weight: bolder;
+}
 
+.card-price {
+  color: #998888;
+  font-weight: bold;
+}
 
+.card-body {
+  color: #998888;
+}
+.card
+ {
+ border: 1px solid black;
+ height: 200px;
+ margin-top: 50px;
+ width: 300px;
+ float: left;
+ background-color: white;
+ margin-left: 32px;
+ border-radius: 10px; 
+ text-align: center;
+ overflow: auto;
+ background-color: #AAA7A3;
+ }
