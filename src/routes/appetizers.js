@@ -27,19 +27,23 @@ export default function Appetizers() {
 
         <div>
             <Menu/>
+          
+                
         {
         apps
         .filter(app => app.category.title === 'Appetizer')
         .map(app => <Appetizer key={app.id} app={app}/>)}
-        </div>
+                        
+                    </div>
+                
+       
     );
 
 }
     const Appetizer = ({app}) => {
         return (
           
-            
-
+         
             
             <div className='small'>
                 <div className='menu-container'>
@@ -49,9 +53,11 @@ export default function Appetizers() {
                 <div className='p-container des'>
                 <p className='description p-container'> {app.description}</p>
                     </div>
+                    </div>
                 </div>
                 </div>
-                </div>
+             
+               
             
         
         )

@@ -68,9 +68,17 @@ background-color: #FFFCF9;
   font-size: 5rem;
   color: #998888;
   font-weight: bolder;
-
 }
 
+.about {
+  color: #AAA7A3;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
 
 
 
