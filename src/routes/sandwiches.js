@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getData } from '../util/data';
+import Menu from '../routes/menu'
 
 
 
@@ -22,6 +23,7 @@ export default function Sandwiches() {
 
 
         <div>
+            <Menu />
         {
         sands
         .filter(sand => sand.category.title === 'Sandwiches')

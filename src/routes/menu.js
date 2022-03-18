@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import Container from "react-bootstrap/Container";
-import { Outlet, Link } from "react-router-dom";
+import React from "react";
 import "../index.css";
 import Nav from 'react-bootstrap/Nav'
 
@@ -10,7 +8,7 @@ export default function Menu() {
     return (
 
     
-        <Nav fill variant="tabs" defaultActiveKey="/home">
+        <Nav className='menu-bg' fill variant="tabs" defaultActiveKey="/home">
   <Nav.Link className='menu-link' eventKey="disabled" disabled>
       Menu
     </Nav.Link>

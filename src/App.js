@@ -4,6 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 import "./App.css";
 import "./index.css";
 import logo from './images/logo.png'
+import Footer from './Footer.js'
 
 export default function App() {
   return (
@@ -12,16 +13,17 @@ export default function App() {
       
     
     <img className='logo' src={logo} alt="Logo"/>
+    <div className='main'>Menu</div>
     <div className='nav'>
-      <Link to="/" style={{ textDecoration: 'none' }} className="menu-link">Home</Link> {" "}
-      <Link to="/menu" style={{ textDecoration: 'none' }} className="menu-link">Menu</Link> {" "}
+      <Link to="/appetizers" style={{ textDecoration: 'none' }} className="menu-link">Appetizers</Link> {" "}
+      <Link to="/sandwiches" style={{ textDecoration: 'none' }} className="menu-link">Sandwiches</Link> {" "}
       </div>
   </Container>
    
       
 
 
-
+<Footer />
 
 
 

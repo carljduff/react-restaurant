@@ -3,6 +3,7 @@ import { getData } from '../util/data';
 import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Menu from '../routes/menu'
 
 
 
@@ -25,6 +26,7 @@ export default function Appetizers() {
 
 
         <div>
+            <Menu/>
         {
         apps
         .filter(app => app.category.title === 'Appetizer')
