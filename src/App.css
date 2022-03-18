@@ -9,10 +9,18 @@ background-color: #FFFCF9;
   text-decoration: none;
   font-family: 'Cookie', cursive;
 }
+
 .menu-link {
   text-align: center;
   color: #998888;
   font-size: 3rem;
+}
+
+.menu-tab {
+  text-align: center;
+  color: #998888;
+  font-size: 2rem;
+  
 }
 .logo {
   display: block;
@@ -45,5 +53,8 @@ background-color: #FFFCF9;
   max-width: 300px;
   overflow: auto;
 }
+
+
+
 
 
