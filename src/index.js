@@ -9,7 +9,8 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Menu from './routes/menu'
 import Appetizers from './routes/appetizers';
-import Pasta from './routes/pasta'
+import Sandwiches from './routes/sandwiches'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 ReactDOM.render(
@@ -19,7 +20,7 @@ ReactDOM.render(
       <Route path="/" element={<App />} />
         <Route path="menu" element={<Menu />} />
         <Route path="appetizers" element={<Appetizers />} />
-        <Route path="pasta" element={<Pasta />} />
+        <Route path="sandwiches" element={<Sandwiches />} />
          
     
     </Routes>
